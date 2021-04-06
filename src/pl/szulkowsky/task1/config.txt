@@ -1,0 +1,4 @@
+READ_FROM_FILE=true
+READ_FILE_PATH=\src\pl\szulkowsky\task1\input.txt
+WRITE_TO_FILE=false
+WRITE_FILE_PATH=\src\pl\szulkowsky\task1\output.txt

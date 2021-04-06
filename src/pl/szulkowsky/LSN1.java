@@ -1,32 +1,18 @@
 package pl.szulkowsky;
 
-import java.util.*;
+import pl.szulkowsky.task1.Task1;
+
+import java.io.IOException;
 
 public class LSN1 {
 
     public static void main(String[] args) {
-        SortedSet<Integer> sortedSet = new TreeSet<>();
-        Scanner scanner = new Scanner(System.in);
-        int i = 0;
-
-        while (scanner.hasNextInt()) {
-            i++;
-            sortedSet.add(scanner.nextInt());
+        try {
+            ConfiguredTask task = new Task1(args[0]);
+            task.run();
+            task.finish();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        sortedSet.forEach((n) -> {
-            print(n + " ");
-        });
-
-        if(sortedSet.size() > 0) {
-            print("\ncount: " + i);
-            print("\ndistinct: " + sortedSet.size());
-            print("\nmin: " + sortedSet.first());
-            print("\nmax: " + sortedSet.last());
-        }
-    }
-
-
-    private static void print(String string){
-        System.out.print(string);
     }
 }

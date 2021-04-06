@@ -1,0 +1,6 @@
+READ_FROM_FILE=false
+READ_FILE_PATH=\src\pl\szulkowsky\task2\input.txt
+WRITE_TO_FILE=false
+WRITE_FILE_PATH=\src\pl\szulkowsky\task2\output.txt
+SUM=13
+#Parameter SUM is special to this task to configure a sum of two numbers - it does not have to be 13 but is by default
